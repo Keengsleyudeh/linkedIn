@@ -4,37 +4,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
+}
 .main {
-  font-family: Sans-Serif;
+  /* font-family: Sans-Serif; */
+  font-family: "Source Sans Pro", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
   overflow: hidden;
 }
 .nav h1 {
   font-weight: bold;
-  font-size: 25pv;
-  color: #0077B5;
-  padding: 10px;
+  font-size: 26px;
+  color: #0A66C2;
+  padding: 15px 0px 10px 30px;
 }
 .nav h1 span {
   color: white;
-  background-color: #0077B5;
+  background-color: #0A66C2;
   border-radius: 2px;
+  margin-left: 2px;
   padding-left: 2px;
   padding-right: 2px;
 }
 .content {
-  max-width: 400px;
+  max-width: 350px;
   width: 80vw;
   min-width: 200px;
   padding: 20px 20px;
-  margin: 50px auto 25px;
-  box-shadow: 1px 1px 2px 1px gray;
+  margin: 60px auto 25px;
+  box-shadow: 0px 1px 3px 1px #8D8D8D;
   border-radius: 5px;
 }
+
 .content h2 {
-  margin: 0 0 4px 0;
-  font-size: 25px;
-  font-weight: bold;
+  margin: 0 0 7px 0;
+  font-size: 29px;
+  font-weight: 600;
   padding-bottom: 10px;
+  color: #333333;
 }
 .links a {
   display: flex;
@@ -43,17 +56,19 @@
   text-decoration: none;
   border-radius: 20px;
   background-color: transparent;
-  color: black;
-  font-size: 12px;
+  color: #333333;
+  font-size: 13px;
   font-weight: 400;
   box-shadow: 0px 0px 0px 1px gray;
-  padding: 3px 3px;
+  /* padding: 6px 0px; */
   width: 100%;
   margin-bottom: 10px;
+  height: 35px;
 }
 .links img {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
 }
 .flex {
   display: flex;
@@ -69,27 +84,32 @@
 }
 .flex p {
   padding: 0px 5px 0px 5px;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
+  color: #333333;
 }
 .form input {
   text-align: left;
   padding: 8px;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 3px;
+  height: 40px;
 }
+
 .password {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  font-size: 14px;
+  border: 1px solid gray;
   border-radius: 3px;
+  height: 40px;
 }
 .password input {
   border: none;
@@ -98,26 +118,26 @@
 }
 .password a {
   text-decoration: none;
-  font-size: 12px;
-  color: #0077B5;
+  font-size: 11px;
+  color: #0A66C2;
   padding: 10px;
   font-weight: bold;
 }
 .forget a {
   display: block;
-  color: #0077B5;
+  color: #0A66C2;
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   margin: 9px 0 14px;
 }
 .button [type="submit"] {
-  padding: 10px;
+  height: 40px;
   width: 100%;
   border-radius: 20px;
   border: none;
   color: white;
-  background-color: #0077B5;
+  background-color: #0A66C2;
   font-size: 12px;
   box-shadow: 0px 0px 0px 1px white;
   font-weight: bold;
@@ -125,14 +145,62 @@
 .button [type="submit"]:hover {
   cursor: pointer;
   box-shadow: none;
-  font-size: 11px;
+  transform: scale(1.01);
+  transition: all ease-in 0.3s;
 }
 .main>p {
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .main>p a {
   text-decoration: none;
-  color: #0077B5;
+  font-weight: 500;
+  margin-left: 5px;
+  color: #0A66C2;
 }
+
+.links a:hover {
+  transform: scale(1.01);
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+}
+
+.form input:hover,
+.password:hover {
+  border: 1px solid #0A66C2;
+  
+}
+
+@media (max-width: 768px) {
+  .content {
+    box-shadow: 0px 0px 0px 0px white;
+    border: none;
+    width: 90vw;
+    max-width: 400px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .nav h1{
+    max-width: 400px;
+    width: 90vw;
+    margin: 0px auto;
+    padding-left: 18px;
+    font-size: 25px;
+  }
+
+  .links a {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .form input {
+    font-size: 13px;
+  }
+
+  .password {
+    font-size: 13px;
+  }
+}
+
