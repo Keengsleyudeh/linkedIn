@@ -43,6 +43,103 @@ body {
 }
 
 /* Post Section */
+.post-container {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.post-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.post-info h3 span {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #999;
+}
+.post-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.post-info span {
+    font-size: 12px;
+    color: #999;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+.post-content a {
+    color: #0073b1;
+    text-decoration: none;
+}
+.post-content span {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.post-images img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.post-actions button i {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.post-actions .fa-comment-o {
+  margin-left: 23px;
+}
+.post-actions .fa-retweet {
+  margin-left: 15px;
+}
 
 
 /* Suggested follow section */
