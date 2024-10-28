@@ -154,7 +154,7 @@ body {
 
 
 /* Footer */
-.foot-nav {
+.footer-nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -187,10 +187,6 @@ body {
 }
 .nav-item .fa-bell {
   margin-left: 20px;
-}
-
-.foot {
-    display: none;
 }
 
 
