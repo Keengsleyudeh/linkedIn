@@ -10,6 +10,13 @@ body {
   font-weight: 400;
   font-size: 15px;
 }
+
+body {
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .main {
   /* font-family: Sans-Serif; */
   font-family: "Source Sans Pro", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -117,24 +124,6 @@ body {
   outline: none;
 }
 
-/* .password {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  border: 1px solid gray;
-  border-radius: 3px;
-  height: 40px;
-  position: relative;
-} */
-/* .password input {
-  border: none;
-  padding: 8px;
-  margin: 0;
-  font-size: 14px;
-} */
 .password a {
   text-decoration: none;
   font-size: 11px;
